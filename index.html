@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Polar Cream | Heladería Premium</title>
+<link rel="icon" href="PolarCreamLogo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Nunito:wght@400;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <a href="#inicio" class="logo"><img src="PolarCreamLogo.png" alt="Polar Cream Logo"></a>
+  
+  <!-- Truco 100% CSS para el menú móvil sin usar JavaScript -->
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <label for="menu-toggle" class="mobile-menu-btn" aria-label="Abrir menú de navegación">☰</label>
+
+  <nav>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#historia">Historia</a></li>
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="#promociones">Promociones</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="inicio" class="hero">
+  <div class="hero-content">
+    <span class="badge">100% Artesanal</span>
+    <h1>Descubre el<span>Sabor del Polo</span></h1>
+    <p>Disfruta de nuestros sabores tradicionales con la calidad y alegría de siempre. Una experiencia refrescante en cada bocado.</p>
+    <a href="#menu" class="btn-primary">Ver Sabores</a>
+  </div>
+  <div class="hero-image">
+    <div class="hero-photo-container">
+      <img src="HELADO.png" alt="Helado Artesanal Polar Cream">
+    </div>
+  </div>
+</section>
+
+<section id="historia" class="page-section about">
+  <div class="about-box">
+    <h2>Nuestra Historia</h2>
+    <p><strong>Nacimos con una idea sencilla, pero llena de significado: transformar un momento cotidiano en una experiencia memorable.</strong> Desde nuestros primeros días, nos hemos dedicado a crear helados artesanales que combinan la riqueza de los sabores tradicionales con una visión fresca, moderna y sofisticada.</p>
+    <p>Inspirados por la <strong>frescura del polo y la esencia vibrante del Caribe</strong>, seleccionamos cuidadosamente cada ingrediente para crear una experiencia que se distingue por su sabor, textura y calidad. Cada preparación es elaborada con dedicación y atención a los detalles, porque creemos que la verdadera excelencia se encuentra en aquello que se hace con pasión.</p>
+    <p>Nuestra identidad nace de la unión entre <strong>tradición e innovación</strong>. Respetamos los sabores que forman parte de nuestra historia, mientras exploramos nuevas combinaciones que despiertan los sentidos y convierten cada visita en una oportunidad para descubrir algo diferente.</p>
+    <p>Para nosotros, un helado es mucho más que un postre. Es una pausa para disfrutar, una celebración de los pequeños momentos y una manera de compartir emociones con quienes más queremos. Por eso, cada bola representa nuestro compromiso con la <strong>calidad premium, la creatividad y la satisfacción de nuestros clientes</strong>.</p>
+    <p>Hoy continuamos creciendo con la misma pasión que nos vio comenzar, llevando en cada sabor nuestra esencia y nuestro deseo de crear momentos únicos. <strong>Porque cuando la calidad se encuentra con la pasión, cada helado se convierte en una experiencia que merece ser recordada.</strong></p>
+  </div>
+</section>
+
+<section id="menu" class="page-section menu">
+  <div class="menu-heading">
+    <span>LO MÁS FRESCO</span>
+    <h2>Nuestro Menú</h2>
+    <p>Los favoritos de la casa, elaborados con los mejores ingredientes.</p>
+  </div>
+
+  <div class="cards">
+    <article class="menu-card">
+      <div class="card-image"><img src="fresa.png" alt="Fresa Caribeña"></div>
+      <div class="card-content">
+        <div class="card-top"><h3>Fresa Caribeña</h3><strong>RD$ 120</strong></div>
+        <p>Helado cremoso de fresas frescas seleccionadas.</p>
+        <div class="card-footer"><span>ARTESANAL</span><i>♥</i></div>
+      </div>
+    </article>
+
+    <article class="menu-card">
+      <div class="card-image"><img src="chocolate.png" alt="Doble Chocolate"></div>
+      <div class="card-content">
+        <div class="card-top"><h3>Doble Chocolate</h3><strong>RD$ 135</strong></div>
+        <p>Intenso, cremoso y perfecto para los amantes del chocolate.</p>
+        <div class="card-footer"><span>ARTESANAL</span><i>♥</i></div>
+      </div>
+    </article>
+
+    <article class="menu-card">
+      <div class="card-image"><img src="mango.png" alt="Mango Tropical"></div>
+      <div class="card-content">
+        <div class="card-top"><h3>Mango Tropical</h3><strong>RD$ 110</strong></div>
+        <p>Un sabor tropical elaborado con mango fresco y natural.</p>
+        <div class="card-footer"><span>ARTESANAL</span><i>♥</i></div>
+      </div>
+    </article>
+
+    <article class="menu-card">
+      <div class="card-image"><img src="coco.png" alt="Coco Loco"></div>
+      <div class="card-content">
+        <div class="card-top"><h3>Coco Loco</h3><strong>RD$ 125</strong></div>
+        <p>Suave, tropical y cremoso con auténtico sabor a coco.</p>
+        <div class="card-footer"><span>ARTESANAL</span><i>♥</i></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="promociones" class="page-section promos">
+  <div class="promo">
+    <h2>¡Oferta de Verano!</h2>
+    <p>Lleva 3 bolas de helado por el precio de 2. ¡Combina tus sabores favoritos y refréscate al máximo!</p>
+    <button>Aprovechar Oferta</button>
+  </div>
+</section>
+
+<footer id="contacto" class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <img src="PolarCreamLogo.png" alt="Polar Cream" class="footer-logo">
+      <p>Helados artesanales hechos con pasión y sabor caribeño.</p>
+    </div>
+    <div>
+      <h3>Contacto</h3>
+      <p>Calle Principal #45, La Vega, RD.</p>
+      <p>(809) 555-0000</p>
+      <p>correo@polarcream.com</p>
+    </div>
+    <div>
+      <h3>Síguenos</h3>
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">TikTok</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Polar Cream. Todos los derechos reservados.</div>
+</footer>
+
+</body>
+</html>
