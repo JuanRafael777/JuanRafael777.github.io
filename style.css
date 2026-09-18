@@ -44,6 +44,7 @@ body {
 
 .logo {
     position: relative;
+    z-index: 1001;
 }
 
 .logo img {
@@ -475,16 +476,24 @@ body {
 }
 
 @media (max-width: 768px) {
-    .mobile-menu-btn { display: block; }
+    .mobile-menu-btn { 
+        display: block; 
+        position: absolute; 
+        right: 5%; /* Obliga al botón a quedarse en la esquina derecha */
+        top: 20px; 
+    }
+    
     .nav-links {
         position: absolute;
-        top: 75px;
+        top: 80px;
         left: -100%;
         width: 100%;
         background: var(--choco);
         flex-direction: column;
-        padding: 25px 0;
-        transition: left 0.3s;
+        padding: 10px 0 20px 0; /* Se reduce el espacio sobrante */
+        transition: left 0.3s ease-in-out;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+        border-bottom: 4px solid var(--pink);
     }
     
     /* Control CSS del menú mediante el checkbox */
@@ -492,7 +501,17 @@ body {
         left: 0;
     }
     
-    .nav-links li { margin: 10px; }
+    .nav-links li { 
+        margin: 0; 
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-links a {
+        display: block;
+        padding: 15px 0; /* Área de toque más equilibrada */
+        font-size: 1.1rem;
+    }
     
     .hero {
         padding: 70px 6%;
