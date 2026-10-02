@@ -239,7 +239,7 @@ ul {
 ========================= */
 .hero {
     position: relative;
-    background-image: url('imagenes/institucion.jpg');
+    background-image: url('institucion.jpg');
     background-color: var(--primary);
     background-size: cover;
     background-position: center;
